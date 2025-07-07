@@ -23,17 +23,21 @@ const Footer = () => {
                 <img src="/logo2.png" alt="Safar Al Barakah" className="h-10 w-auto mr-2" />
                 <span className="text-nusuk-gold font-bold text-lg">Safar Al Barakah</span>
               </div>
-              <p className="text-xs sm:text-sm text-gray-300 mb-4 leading-relaxed">
+              {/* <p className="text-xs sm:text-sm text-gray-300 mb-4 leading-relaxed">
                 Your trusted companion for Umrah from Bangladesh. We guide you with care, compassion, and convenience—striving for barakah in every journey.
-              </p>
+              </p> */}
               <div className="space-y-2 text-xs sm:text-sm">
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4 text-nusuk-gold" />
-                  <span className="text-gray-300">01810811400</span>
+                  <span className="text-gray-300">+8801810-811400</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-nusuk-gold" />
+                  <span className="text-gray-300">+8801994-422701</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-nusuk-gold" />
-                  <span className="text-gray-300">info.safaralbarakah.com</span>
+                  <span className="text-gray-300">info.safaralbarakah@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-4 h-4 text-nusuk-gold" />

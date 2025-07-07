@@ -14,6 +14,8 @@ import TicketingPage from './pages/Ticketing';
 import MakkahPage from './pages/Makkah';
 import MadinahPage from './pages/Madinah';
 import WhyUsPage from './pages/WhyUs';
+import AboutPage from './pages/About';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -34,11 +36,13 @@ function App() {
                 <FAQ short />
               </>
             } />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/packages" element={<PackagesPage />} />
             <Route path="/ticketing" element={<TicketingPage />} />
             <Route path="/makkah" element={<MakkahPage />} />
             <Route path="/madinah" element={<MadinahPage />} />
             <Route path="/why-us" element={<WhyUsPage />} />
+            <Route path="/support" element={<Support />} />
           </Routes>
         </main>
         <Footer />

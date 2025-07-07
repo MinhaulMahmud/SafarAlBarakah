@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutNusuk from '../components/AboutNusuk';
+import AboutNusuk from '../components/why-us';
 
 const WhyUsPage = () => <AboutNusuk />;
 

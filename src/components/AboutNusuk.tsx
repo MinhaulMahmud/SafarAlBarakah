@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Globe, Users, Compass } from 'lucide-react';
+import AboutPage from '../pages/About';
 
 const AboutNusuk = () => {
   return (
@@ -11,11 +12,11 @@ const AboutNusuk = () => {
       <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-          >
+            >
             <h2 className="text-2xl font-bold mb-6 text-nusuk-gold leading-tight">
               Our Story & Values
             </h2>
@@ -30,10 +31,11 @@ const AboutNusuk = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-nusuk-gold text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors text-sm"
+              onClick={() => window.location.href = '/about'}
             >
               Learn More About Safar Al Barakah
             </motion.button>
-          </motion.div>
+            </motion.div>
 
           {/* Values Grid */}
           <motion.div

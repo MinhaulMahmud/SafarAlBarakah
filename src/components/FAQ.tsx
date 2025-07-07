@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+// import Support from '../pages/Support';
 
 const FAQ = () => {
   const [openItem, setOpenItem] = useState<number | null>(null);

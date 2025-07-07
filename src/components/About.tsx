@@ -12,11 +12,11 @@ const About = () => {
       <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-          >
+            >
             <h2 className="text-2xl font-bold mb-6 text-nusuk-gold leading-tight">
               Safar Al Barakah — Your Trusted Umrah Companion
             </h2>
@@ -26,20 +26,20 @@ const About = () => {
             
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               <div className="flex items-center space-x-3">
-                <div className="text-nusuk-gold">🔋</div>
-                <span className="text-sm text-gray-300">Spiritual Guidance</span>
+              <div className="text-nusuk-gold">🔋</div>
+              <span className="text-sm text-gray-300">Spiritual Guidance</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="text-nusuk-gold">✈</div>
-                <span className="text-sm text-gray-300">Complete Travel Support</span>
+              <div className="text-nusuk-gold">✈</div>
+              <span className="text-sm text-gray-300">Complete Travel Support</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="text-nusuk-gold">🏨</div>
-                <span className="text-sm text-gray-300">Comfortable Stay</span>
+              <div className="text-nusuk-gold">🏨</div>
+              <span className="text-sm text-gray-300">Comfortable Stay</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="text-nusuk-gold">🇧🇩</div>
-                <span className="text-sm text-gray-300">Local Bangladeshi Team</span>
+              <div className="text-nusuk-gold">🇧🇩</div>
+              <span className="text-sm text-gray-300">Local Bangladeshi Team</span>
               </div>
             </div>
             
@@ -47,10 +47,11 @@ const About = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-nusuk-gold text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors text-sm"
+              onClick={() => window.location.href = '/packages'}
             >
               Begin Your Sacred Journey
             </motion.button>
-          </motion.div>
+            </motion.div>
 
           {/* Stats Grid */}
           <motion.div

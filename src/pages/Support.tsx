@@ -1,5 +1,5 @@
 import React from 'react';
-import FAQ from '../components/FAQ';
+import FAQ from '../components/Support';
 
 const SupportPage = () => <FAQ />;
 
