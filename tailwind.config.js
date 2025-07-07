@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'nusuk-teal': '#1a5f5f',
+        'nusuk-teal': '#2a9c8f',
         'nusuk-gold': '#c8860d',
         'nusuk-light-teal': '#2a7373',
         'nusuk-dark-teal': '#144747',

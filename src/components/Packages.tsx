@@ -131,7 +131,16 @@ const Packages = () => (
 								</li>
 							))}
 						</ul>
-						<button className="mt-auto bg-black text-white font-semibold rounded-lg px-4 py-2 text-xs sm:text-sm shadow hover:bg-gray-800 hover:text-white border border-black/10 transition-colors duration-200">
+						<button
+							className="mt-auto bg-black text-white font-semibold rounded-lg px-4 py-2 text-xs sm:text-sm shadow hover:bg-gray-800 hover:text-white border border-black/10 transition-colors duration-200"
+							onClick={() => {
+								const details = pkg.details.slice(0, 4).join('\n- '); // Show first 4 details for brevity
+								const msg = encodeURIComponent(
+									`Assalamu Alaikum,\nI want to book the '${pkg.name}'.\n\nDetails:\n- Price: ${pkg.price}\n- Duration: ${pkg.duration}\n- ${details}\n\nPlease assist me with the booking process.`
+								);
+								window.open(`https://wa.me/8801810811400?text=${msg}`, '_blank');
+							}}
+						>
 							Book Now
 						</button>
 					</motion.div>

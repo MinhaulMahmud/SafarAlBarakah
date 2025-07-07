@@ -1,0 +1,17 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useState } from 'react';
+import { Menu, X, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navLinks = [
+        { label: 'Packages', to: '/packages' },
+        { label: 'Ticketing', to: '/ticketing' },
+        { label: 'Makkah', to: '/makkah' },
+        { label: 'Madinah', to: '/madinah' },
+        { label: 'Support', to: '/support' },
+        { label: 'Contact', to: '/contact' },
+    ];
+    return (_jsxs("header", { className: "fixed top-0 left-0 right-0 z-50 w-full overflow-x-hidden backdrop-blur-md bg-transparent border-b border-gray-200", children: [_jsx("div", { className: "w-full px-2 sm:px-4 md:px-6 lg:px-8", children: _jsxs("div", { className: "flex justify-between items-center h-16 w-full", children: [_jsxs(Link, { to: "/", className: "flex items-center space-x-2 flex-shrink-0 focus:outline-none", "aria-label": "Home", children: [_jsx("img", { src: "/logo2.png", alt: "Safar Al Barakah Logo", className: "h-14 w-auto object-contain select-none scale-110" }), _jsx("span", { className: "text-nusuk-teal font-bold text-base tracking-wide", children: "Safar Al Barakah" }), _jsx("span", { className: "sr-only", children: "Home" })] }), _jsx("nav", { className: "hidden md:flex items-center space-x-6 text-sm font-semibold w-full max-w-[500px] justify-center", children: navLinks.map((item) => (_jsx(Link, { to: item.to, className: "text-nusuk-teal hover:text-nusuk-gold transition-colors duration-200 whitespace-nowrap", onClick: () => setIsMenuOpen(false), children: item.label }, item.label))) }), _jsx("div", { className: "hidden md:flex items-center space-x-4 flex-shrink-0", children: _jsxs("button", { className: "flex items-center text-nusuk-teal hover:text-nusuk-gold transition-colors space-x-1 text-sm font-semibold", children: [_jsx(Globe, { size: 20 }), _jsx("span", { children: "EN" })] }) }), _jsx("div", { className: "md:hidden", children: _jsx("button", { onClick: () => setIsMenuOpen(!isMenuOpen), className: "text-gray-700 hover:text-nusuk-teal", children: isMenuOpen ? _jsx(X, { size: 24 }) : _jsx(Menu, { size: 24 }) }) })] }) }), isMenuOpen && (_jsx("div", { className: "md:hidden bg-white border-t", children: _jsxs("div", { className: "px-2 pt-2 pb-3 space-y-1 sm:px-3", children: [_jsx(Link, { to: "/packages", className: "block px-3 py-2 text-gray-700 hover:text-nusuk-teal", onClick: () => setIsMenuOpen(false), children: "Packages" }), _jsx(Link, { to: "/ticketing", className: "block px-3 py-2 text-gray-700 hover:text-nusuk-teal", onClick: () => setIsMenuOpen(false), children: "Ticketing" }), _jsx(Link, { to: "/makkah", className: "block px-3 py-2 text-gray-700 hover:text-nusuk-teal", onClick: () => setIsMenuOpen(false), children: "Makkah" }), _jsx(Link, { to: "/madinah", className: "block px-3 py-2 text-gray-700 hover:text-nusuk-teal", onClick: () => setIsMenuOpen(false), children: "Madinah" }), _jsx(Link, { to: "/support", className: "block px-3 py-2 text-gray-700 hover:text-nusuk-teal", onClick: () => setIsMenuOpen(false), children: "Support" }), _jsx(Link, { to: "/contact", className: "block px-3 py-2 text-gray-700 hover:text-nusuk-teal", onClick: () => setIsMenuOpen(false), children: "Contact" }), _jsx("div", { className: "border-t pt-2" })] }) }))] }));
+};
+export default Header;

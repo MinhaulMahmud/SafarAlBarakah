@@ -16,6 +16,7 @@ import MadinahPage from './pages/Madinah';
 import WhyUsPage from './pages/WhyUs';
 import AboutPage from './pages/About';
 import Support from './pages/Support';
+import ContactPage from './pages/Contact';
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
             <Route path="/madinah" element={<MadinahPage />} />
             <Route path="/why-us" element={<WhyUsPage />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/contact" element={<ContactPage />} />
+            {/* Additional routes for other components */}
           </Routes>
         </main>
         <Footer />
