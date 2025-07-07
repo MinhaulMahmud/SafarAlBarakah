@@ -29,12 +29,12 @@ function App() {
               <>
                 <Hero />
                 {/* Home: Only brief/clickbait info for each section */}
-                <About short />
-                <Services short />
-                <Journey short />
-                <MobileApp short />
-                <AboutNusuk short />
-                <FAQ short />
+                <About />
+                <Services />
+                <Journey />
+                <MobileApp />
+                <AboutNusuk />
+                <FAQ />
               </>
             } />
             <Route path="/about" element={<AboutPage />} />

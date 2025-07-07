@@ -99,7 +99,7 @@ const Services = () => {
   const totalSlides = Math.ceil(services.length / itemsPerSlide);
 
   // Handle drag/swipe gestures
-  const handleDragEnd = (event, info) => {
+  const handleDragEnd = (event: MouseEvent | TouchEvent, info: { offset: { x: number }, velocity: { x: number } }) => {
     const offset = info.offset.x;
     const velocity = info.velocity.x;
     
@@ -132,7 +132,7 @@ const Services = () => {
     return services.slice(start, end);
   };
 
-  const handleMouseMove = (e, cardRef) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>, cardRef: HTMLDivElement | null) => {
     if (cardRef) {
       const rect = cardRef.getBoundingClientRect();
       const x = e.clientX - rect.left;
